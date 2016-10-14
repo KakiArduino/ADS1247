@@ -80,3 +80,5 @@ coloca em estado logico baixo o pino do CS
 manda 0x12 via SPI
 manda3 bytes de NOP
 coloca em estado logico alto o pino do CS
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

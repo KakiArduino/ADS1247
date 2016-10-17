@@ -36,7 +36,9 @@ Diagrama das coneções: https://drive.google.com/open?id=0B-KEVIklOjN3aWhzZEtZS
 
 3. Comunicação
 
-A comunicação SPI não será explicada aqui, caso tenha dúvidas a seu respeito, o site do arduino poderá ajudá-lo. Para comunicar-se com o ADS1247, é necessário entender alguns de seus comandos básicos e sua estrutura de comunicação. Os treze comandos encontram-se na página 45 no datasheet, mas para obter um funcionamento básico, basta utilizar os três comandos seguintes:
+A comunicação SPI não será explicada aqui, caso tenha dúvidas a seu respeito, o site do arduino poderá ajudá-lo, ou sugerimos a leitura do tutorial indicado abaixo. Para comunicar-se com o ADS1247, é necessário entender alguns de seus comandos básicos e sua estrutura de comunicação. Os treze comandos encontram-se na página 45 no datasheet, mas para obter um funcionamento básico, basta utilizar os três comandos seguintes:
+
+Sugetão de leitura sobre a comunicação SPI com Arduino: http://arduino.stackexchange.com/questions/16348/how-do-you-use-spi-on-an-arduino
 
     NOP (0xFF)  No Operation – É um comando de não operação. Ou seja, quando o arduino manda este comando, ele apenas gera um sinal de clock, não uma ordem;
 

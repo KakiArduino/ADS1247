@@ -2,9 +2,9 @@
 
 	O ADS1247 é um conversor sigma-delta análogo-digital (ADC) de 24bits, que possui maior precisão quando comparado ao ADC do arduino, de 8bits. Além da maoir precisão, o AD1247 possui uma taxa de amostragem que pode ser configurada para realizar de 5 a 2000 amostragens por segundo (SPS), além de possuir comunicação através da interface SPI. Caso você não possua o programa compilador do Arduino pode baixa-lo no linkin abaixo, tabem listamos um linki para dowload do datasheet do ADS124x.
 
-	Sugetões de dowload:
-	Datasheet do ADS124x : http://www.ti.com/lit/ds/sbas426h/sbas426h.pdf
-	Compilador do Arduino: https://www.arduino.cc/en/Main/Software
+	Sugetões de dowload:                                                                                                     
+	Datasheet do ADS124x -> http://www.ti.com/lit/ds/sbas426h/sbas426h.pdf                                                   
+	Compilador do Arduino->  https://www.arduino.cc/en/Main/Software
 
 2. Conexões
 

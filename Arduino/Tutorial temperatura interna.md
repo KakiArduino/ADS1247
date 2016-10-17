@@ -62,9 +62,9 @@ Os registros do ADS1247 encontram-se na pagina 55 do datasheet. Em seguida, há 
 
 5. Pseudo código para Arduino (Para facilitar a interpretação, referenciei as funções do código final no pseudo código).
 
-	//setup()                                                                                                                       	//SPIinitialize()                                                                                                        		Aqui devemos especificar os pinos do CS, DRDY, reset e start, colocar pinos CS, reset e start em estado l			logico alto, configura SPI (velocidade da comunicação, MSBFIRST, SPI_MODE1) e espera pelo menos 2ms 				Inicializa o modulo SPI //fim do SPIinitialize()                                                                       
-		//ADreset()
-			Aqui colocamos em estado logico baixo o pino do reset e esperamos no minimo 0.6 ms                                                                                                         
+	void setup()                                                                                                                SPIinitialize() //                                                                                                       		Aqui devemos especificar os pinos do CS, DRDY, reset e start, colocar pinos CS, reset e start em estado l			logico alto, configura SPI (velocidade da comunicação, MSBFIRST, SPI_MODE1) e espera pelo menos 2ms 				Inicializa o modulo SPI //fim do SPIinitialize()                                                                       
+		ADreset()
+			//Aqui colocamos em estado logico baixo o pino do reset e esperamos no minimo 0.6 ms                                                                                                         
 coloca em estado logico alto o pino do reset                                                                                     
 espera no minimo 0.6 ms //fim do Adreset()                                                                                       
 //ADsetup()                                                                                                                     

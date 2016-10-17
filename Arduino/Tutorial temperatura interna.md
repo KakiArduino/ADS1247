@@ -59,22 +59,3 @@ Os registros do ADS1247 encontram-se na pagina 55 do datasheet. Em seguida, há 
     MUX1 (0x02) – Controlador do Multiplexer. Neste registro, configura-se o clock a ser utilizado ( interno ou externo ), o controle da referência interna, seleciona a referência e monitor do sistema;
 
     SYS0 (0x03) –  Controle do Sistema. Configua-se o ganho do PGA e o número de amostras por segundo.
-
-5. Pseudo código para Arduino (Para facilitar a interpretação, referenciei as funções do código final no pseudo código).
-
-void setup()                                                                                                               		
-           SPIinitialize() // Aqui devemos especificar os pinos do CS, DRDY, reset e start, colocar pinos CS, reset e start em estado logico alto, configura SPI (velocidade da comunicação, MSBFIRST, SPI_MODE1) e espera pelo menos 2ms Inicializa o modulo SPI                                                                                                                             
-	   ADreset()
-			//Aqui colocamos em estado logico baixo o pino do reset e esperamos no minimo 0.6 ms                                                                                                         
-coloca em estado logico alto o pino do reset                                                                                     
-espera no minimo 0.6 ms //fim do Adreset()                                                                                       
-//ADsetup()                                                                                                                     
-coloca pino do CS em estado logico baixo                                                                                         
-configura os registros por exemplo mux1, sys0 //fim do ADsetup()                                                                 
-inicializa comunicação serial // fim do setup()                                                                                 
-//loop()                                                                                                                         
-//Adread()                                                                                                                       
-coloca em estado logico baixo o pino do CS                                                                                       
-manda 0x12 via SPI                                                                                                               
-manda3 bytes de NOP                                                                                                             
-coloca em estado logico alto o pino do CS                                                                                       

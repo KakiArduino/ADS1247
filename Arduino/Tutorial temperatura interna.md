@@ -4,6 +4,7 @@
 
 Sugetões de dowload:
 Datasheet do ADS124x : http://www.ti.com/lit/ds/sbas426h/sbas426h.pdf
+
 Compilador do Arduino: https://www.arduino.cc/en/Main/Software
 
 2. Conexões

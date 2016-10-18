@@ -5,7 +5,6 @@ const int ADResetDelay = 1;      // ADC delay afrter reset in ms min 0.6 ms
 int mux1settings;
 int a =1;
 
-
 void setup() 
 {
  Serial.begin(115200);
@@ -15,14 +14,12 @@ void setup()
  ADsetup();
 }
 
-
 void loop() 
 { 
    if (digitalRead(9) == 0)
        {
           ADread(); // read data when ADC dataReady is low
        }
-
 }
  
 void ADread()
@@ -62,8 +59,9 @@ void ADsetup()
   digitalWrite(10, HIGH);       // libera o barramento de comunicação SPI.
   }
 
-  
-void ADreset()  // Reset de "hardware"
+/* Reset de "hardware", opicional pois segundo o diagrama disponibilizado o pino 4 no ADC (rest de hardware), 
+deve ficar sempre alto no funcionamento normal */  
+void ADreset()  
 {
  digitalWrite( 8, LOW);
  delay(ADResetPulse);
